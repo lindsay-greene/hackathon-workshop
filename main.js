@@ -5,26 +5,6 @@ var cake = document.getElementById("cake");
 var pie = document.getElementById("pie");
 var icecream = document.getElementById("icecream");
 
-// Declare recognition object and set to recognize one English word
-var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
-var recognition = new SpeechRecognition();
-recognition.continuous = false;
-recognition.lang = 'en-US';
-recognition.interimResults = false;
-recognition.maxAlternatives = 1;
-
-// Start recognition when you click on the "tell us your favorite" button
-entry.onclick = function() {
-    recognition.start();
-}
-
-// When word is recognized, speak it and display it on page
-recognition.onresult = function(event) {
-    var favorite = event.results[0][0].transcript;
-    speak(favorite);
-    placeholder.innerHTML = "My favorite is: " + favorite;
-}
-
 // Declare speech synthesis object 
 var synth = window.speechSynthesis;
 
@@ -52,4 +32,24 @@ pie.onclick = function() {
 icecream.onclick = function() {
     speak(icecream.innerHTML);
     placeholder.innerHTML = "My favorite is: " + icecream.innerHTML;
+}
+
+// Declare recognition object and set to recognize one English word
+var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
+var recognition = new SpeechRecognition();
+recognition.continuous = false;
+recognition.lang = 'en-US';
+recognition.interimResults = false;
+recognition.maxAlternatives = 1;
+
+// Start recognition when you click on the "tell us your favorite" button
+entry.onclick = function() {
+    recognition.start();
+}
+
+// When word is recognized, speak it and display it on page
+recognition.onresult = function(event) {
+    var favorite = event.results[0][0].transcript;
+    speak(favorite);
+    placeholder.innerHTML = "My favorite is: " + favorite;
 }
