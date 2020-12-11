@@ -34,9 +34,11 @@ icecream.onclick = function() {
     placeholder.innerHTML = "My favorite is: " + icecream.innerHTML;
 }
 
-// Declare recognition object and set to recognize one English word
+// Declare recognition object 
 var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition
 var recognition = new SpeechRecognition();
+
+// Adjust settings to recognize single English word
 recognition.continuous = false;
 recognition.lang = 'en-US';
 recognition.interimResults = false;
