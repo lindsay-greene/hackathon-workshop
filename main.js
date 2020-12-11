@@ -1,5 +1,5 @@
 // Create variables for HTML elements
-var entry = document.getElementById("entry");
+var voice = document.getElementById("voice");
 var placeholder = document.getElementById("placeholder");
 var cake = document.getElementById("cake");
 var pie = document.getElementById("pie");
@@ -43,7 +43,7 @@ recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
 // Start recognition when you click on the "tell us your favorite" button
-entry.onclick = function() {
+voice.onclick = function() {
     recognition.start();
 }
 
