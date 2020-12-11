@@ -5,7 +5,7 @@ var cake = document.getElementById("cake");
 var pie = document.getElementById("pie");
 var icecream = document.getElementById("icecream");
 
-// Declare speech synthesis object 
+// Declare speech synthesis variable 
 var synth = window.speechSynthesis;
 
 // Given a word, speech synthesis will speak it 
