@@ -40,8 +40,8 @@ var recognition = new SpeechRecognition();
 
 // Adjust settings to recognize single English word
 recognition.continuous = false;
-recognition.lang = 'en-US';
 recognition.interimResults = false;
+recognition.lang = 'en-US';
 recognition.maxAlternatives = 1;
 
 // Start recognition when you click on the "tell us your favorite" button
