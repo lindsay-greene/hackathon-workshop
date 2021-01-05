@@ -1,0 +1,17 @@
+body {
+    background-color: #f598e7;
+    color: #426ceb;
+}
+
+#placeholder {
+    color:#f00505;
+}
+
+button {
+    background-color: orange;
+}
+
+#emoji {
+    font-size: 100px;
+    /* visibility: hidden; */
+}
