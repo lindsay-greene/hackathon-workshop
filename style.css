@@ -1,17 +1,15 @@
 body {
-    background-color: #f598e7;
-    color: #426ceb;
+    background-color: #98e2f5;
+    color: hsl(225, 88%, 38%);
+    text-align: center;
+    margin-top: 50px;
 }
 
 #placeholder {
-    color:#f00505;
+    color:#308a1afd;
 }
 
 button {
-    background-color: orange;
-}
-
-#emoji {
-    font-size: 100px;
-    /* visibility: hidden; */
+    background-color: rgb(197, 143, 207);
+    font-size: 20px;
 }

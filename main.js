@@ -1,9 +1,10 @@
 // Create variables for HTML elements
 var voice = document.getElementById("voice");
 var placeholder = document.getElementById("placeholder");
-var cake = document.getElementById("cake");
-var pie = document.getElementById("pie");
-var icecream = document.getElementById("icecream");
+var water = document.getElementById("water");
+var outside = document.getElementById("outside");
+var stretch = document.getElementById("stretch");
+var emoji = '🌼';
 
 // Declare speech synthesis variable 
 var synth = window.speechSynthesis;
@@ -17,21 +18,21 @@ function speak(word) {
 }
 
 // Speak cake and display it on page 
-cake.onclick = function() {
-    speak(cake.innerHTML);
-    placeholder.innerHTML = "My favorite is: " + cake.innerHTML;
+water.onclick = function() {
+    speak("My favorite is" + water.innerHTML);
+    placeholder.innerHTML = "→ My favorite is: " + water.innerHTML;
 }
 
 // Speak pie and display it on page 
-pie.onclick = function() {
-    speak(pie.innerHTML);
-    placeholder.innerHTML = "My favorite is: " + pie.innerHTML;
+outside.onclick = function() {
+    speak("My favorite is" + outside.innerHTML);
+    placeholder.innerHTML = "→ My favorite is: " + outside.innerHTML;
 }
 
 // Speak ice cream and display it on page 
-icecream.onclick = function() {
-    speak(icecream.innerHTML);
-    placeholder.innerHTML = "My favorite is: " + icecream.innerHTML;
+stretch.onclick = function() {
+    speak("My favorite is" + stretch.innerHTML);
+    placeholder.innerHTML = "→ My favorite is: " + stretch.innerHTML;
 }
 
 // Declare recognition object 
@@ -52,6 +53,6 @@ voice.onclick = function() {
 // When word is recognized, speak it and display it on page
 recognition.onresult = function(event) {
     var favorite = event.results[0][0].transcript;
-    speak(favorite);
-    placeholder.innerHTML = "My favorite is: " + favorite;
+    speak("My favorite is" + favorite);
+    placeholder.innerHTML = "→ My favorite is: " + favorite + " " + emoji;
 }
