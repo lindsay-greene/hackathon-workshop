@@ -17,19 +17,19 @@ function speak(word) {
     synth.speak(utterance);
 }
 
-// Speak cake and display it on page 
+// Speak water and display it on page 
 water.onclick = function() {
     speak("My favorite is" + water.innerHTML);
     placeholder.innerHTML = "→ My favorite is: " + water.innerHTML;
 }
 
-// Speak pie and display it on page 
+// Speak outside and display it on page 
 outside.onclick = function() {
     speak("My favorite is" + outside.innerHTML);
     placeholder.innerHTML = "→ My favorite is: " + outside.innerHTML;
 }
 
-// Speak ice cream and display it on page 
+// Speak stretch and display it on page 
 stretch.onclick = function() {
     speak("My favorite is" + stretch.innerHTML);
     placeholder.innerHTML = "→ My favorite is: " + stretch.innerHTML;
