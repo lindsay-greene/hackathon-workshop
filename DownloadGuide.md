@@ -25,5 +25,6 @@
 - Copy the link provided
 - In the VS Code welcome window, select **Clone Repository**
 - Paste the link into the prompt that appears (usually at the top of the window) 
+- Choose **Clone from URL** 
 - Save the repository to a location on your computer, and open it in VS Code 
 - You should now see five files (including this one!)
